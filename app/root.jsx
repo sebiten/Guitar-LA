@@ -3,7 +3,9 @@ import {
     Meta,
     Links,
     Outlet,
-    Scripts
+    Scripts,
+    useCatch,
+    Link
   } from "@remix-run/react";
 import styles from '~/styles/index.css'
 import Header from "~/components/header";
@@ -59,8 +61,8 @@ function Document({children}) {
     return (
         <html lang="es">
             <head>
-                <Meta />
-                <Links />
+            <Meta />
+            <Links />
             </head>
             <body>
             <Header/>
@@ -71,4 +73,22 @@ function Document({children}) {
             </body>
         </html>
     )
+}
+
+export function CatchBondary() {
+    const error = useCatch()
+    return (
+        <Document>
+            <p>{error.status} {error.statusText}</p>
+        </Document>
+
+    )
+}
+export function ErrorBoundary({error}) {
+    return (
+        <Document>
+        <p>{error.status} {error.statusText}</p>
+        </Document>
+    )
+
 }
