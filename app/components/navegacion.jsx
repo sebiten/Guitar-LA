@@ -15,7 +15,7 @@ function Navegacion() {
               className={location.pathname === '/nosotros' ? 'active' : ''}
               >Nosotros</Link>
               <Link 
-              to="/tienda"
+              to="/guitarras"
               className={location.pathname === '/tienda' ? 'active' : ''}
               >Tienda</Link>
               <Link 
