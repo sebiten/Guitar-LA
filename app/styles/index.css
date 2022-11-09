@@ -60,6 +60,7 @@
 }
 .header .navegacion {
   display: flex;
+  align-items: center;
   gap: 2rem;
   margin-top: 5rem;
 }
@@ -81,6 +82,9 @@
 }
 .header .navegacion a:hover, .header .active  {
   background-color: var(--primary);
+}
+.header .navegacion img {
+  width: 30px;
 }
 
 /* Footer */
@@ -119,6 +123,9 @@
   font-weight: bold;
   text-align: center;
 
+}
+.footer .navegacion a:last-of-type {
+  display: none;
 }
 .error {
   font-size: 2rem;

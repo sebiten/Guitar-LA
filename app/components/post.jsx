@@ -10,7 +10,7 @@ export default function Post({post}) {
             <h3>{titulo}</h3>
             <p className="fecha">{fomatearFecha(publishedAt)}</p>
             <p className="resumen">{contenido}</p>
-            <Link className="enlace" to={`/posts/${url}`}>Leer articulo</Link>
+            <Link className="enlace" to={`/blog/${url}`}>Leer articulo</Link>
         </div>
     </article>
   )

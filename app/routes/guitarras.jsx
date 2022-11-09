@@ -1,8 +1,5 @@
 import { Outlet} from '@remix-run/react'
-
 import styles from '~/styles/guitarra.css'
-
-
 
 export function links() { 
 return [
@@ -11,11 +8,8 @@ return [
     href: styles
   }
 ]
-
 }
-
 function Tienda() {
-
   return (
     <main className='contenedor'>
       <Outlet />

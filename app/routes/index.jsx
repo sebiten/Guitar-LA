@@ -27,9 +27,7 @@ export function links() {
       rel: 'stylesheet',
       href: stylesCurso
     }
-      
   ]
-
 }
 export async function loader() {
   const [guitarras, posts, curso] = await Promise.all([getGuitarras(), getPosts(), getCurso()]);
