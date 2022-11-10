@@ -1,6 +1,7 @@
 import img from '../../public/img/nosotros.jpg'
 import styles from '~/styles/nosotros.css'
 
+
 export function meta() {
   return {
     title: 'GuitarLA - Sobre nosotros',
