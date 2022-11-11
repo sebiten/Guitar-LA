@@ -6,7 +6,6 @@ import {
   Outlet,
   Scripts,
   useCatch,
-  Link,
 } from "@remix-run/react";
 import styles from "~/styles/index.css";
 import Header from "~/components/header";
@@ -57,7 +56,7 @@ export default function App() {
         }
         return guitarraState;
       });
-      setCarrito(carritoActualizado)
+      setCarrito(carritoActualizado);
     } else {
       // nuevo registro
       setCarrito([...carrito, guitarra]);
@@ -68,6 +67,7 @@ export default function App() {
       <Outlet
         context={{
           agregarCarrito,
+          carrito,
         }}
       />
     </Document>
