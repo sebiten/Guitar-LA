@@ -34,12 +34,22 @@ font-weight: 700;
 font-size: 3.2rem;
 
 }
-.precio {
+.producto .precio {
+    margin-top: 1rem;
     font-weight: 700;
     color: var(--primary);
 }
 .subtotal {
     font-size: 2.2rem;
+}
+.select {
+    all: unset;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+
 }
 .resumen {
     background-color: #f9fafb;
@@ -47,4 +57,14 @@ font-size: 3.2rem;
     border-radius: 10px;
     position: sticky;
     top: 3rem;
+}
+.btn-eliminar {
+    all: unset;
+    position: absolute;
+    right: 69rem;
+    top: 61rem;
+
+}
+.btn-eliminar:hover {
+    cursor: pointer;
 }
